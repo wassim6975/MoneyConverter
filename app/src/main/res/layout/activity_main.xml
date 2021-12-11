@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="405dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="#FFEB3B"
+        android:fontFamily="sans-serif"
+        android:rotationX="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorLink="#00005EFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
+        tools:text="@string/textView1" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/textField1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/button1"
+        android:textColor="@color/white"
+        app:iconTint="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        app:strokeColor="#009688" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/selectMonnaieSource"
+        android:layout_width="122dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="40dp"
+        android:entries="@array/SelectMoney"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleConversion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <Spinner
+        android:id="@+id/selectMonnaieDestination"
+        android:layout_width="135dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="37dp"
+        android:entries="@array/SelectMoney"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/titleConversion"
+        android:layout_width="132dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/Depart"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <TextView
+        android:id="@+id/titleConversion2"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/Arrive"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConvertir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="131dp"
+        android:text="@string/title2"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

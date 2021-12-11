@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TP5</string>
+    <string name="title">Convertisseur de devises</string>
+    <string name="title2">Bonjour, et bienvenue</string>
+    <string name="button1">Convertir</string>
+    <string name="textView1">Résultat</string>
+    <string name="textField1">Entrer un montant</string>
+    <string name="Depart">Devise de depart :</string>
+    <string name="Arrive">Devise d\'arrivé :</string>
+    <string name="menusItem1">paramètres</string>
+    <string name="titleActivity2">Liste des devises</string>
+    <string name="titleActivity3">Modifications</string>
+    <string name="buttonModificationTaux">Modifier</string>
+    <string name="newTaux">Nouveau taux</string>
+    <string name="Menu_item1">Home</string>
+    <string name="Menu_item2">Paramètres</string>
+    <string name="Menu_item3">Modifications</string>
+    <string-array name="SelectMoney">
+        <item>Yen</item>
+        <item>Dollar</item>
+        <item>Peso</item>
+        <item>Euro</item>
+    </string-array>
+</resources>
